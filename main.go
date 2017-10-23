@@ -11,10 +11,10 @@ import (
 
 	"github.com/yvasiyarov/gorelic"
 
-	"/api"
+	"./api"
 	"./payouts"
-	"proxy"
-	"storage"
+	".proxy"
+	"./storage"
 )
 
 var cfg proxy.Config
