@@ -13,7 +13,7 @@ import (
 
 	"./api"
 	"./payouts"
-	".proxy"
+	"./proxy"
 	"./storage"
 )
 
