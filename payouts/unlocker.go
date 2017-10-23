@@ -10,9 +10,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 
-	"github.com/Cremator/open-ethereum-pool/rpc"
-	"github.com/Cremator/open-ethereum-pool/storage"
-	"github.com/Cremator/open-ethereum-pool/util"
+	"../rpc"
+	"../storage"
+	"../util"
 )
 
 type UnlockerConfig struct {
