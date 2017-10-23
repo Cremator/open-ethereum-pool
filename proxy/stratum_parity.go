@@ -29,7 +29,6 @@ type response struct {
 
 // notification is a special kind of Request, it has no ID and is sent from the server to the client
 type notification struct {
-  ID     uint64        `json:"id"`
 	Method string        `json:"method"`
 	Params []interface{} `json:"params"`
 }
@@ -42,6 +41,7 @@ type ErrorCallback func(err error)
 type NotificationHandler func(args []interface{})
 
 // Client maintains a connection to the stratum server and (de)serializes requests/reponses/notifications
+
 type Client struct {
 	socket net.Conn
 
@@ -53,13 +53,15 @@ type Client struct {
 
 	ErrorCallback        ErrorCallback
 	notificationHandlers map[string]NotificationHandler
+	
+	Url         string
 }
 
 //Dial connects to a stratum+tcp at the specified network address.
 // This function is not threadsafe
 // If an error occurs, it is both returned here and through the ErrorCallback of the Client
-func (c *Client) Dial(host string) (err error) {
-	c.socket, err = net.Dial("tcp", host)
+func (c *Client) Dial(Url string) (err error) {
+	c.socket, err = net.Dial("tcp", Url)
 	if err != nil {
 		c.dispatchError(err)
 		return
