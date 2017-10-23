@@ -11,10 +11,10 @@ import (
 
 	"github.com/yvasiyarov/gorelic"
 
-	"github.com/Cremator/open-ethereum-pool/api"
-	"github.com/Cremator/open-ethereum-pool/payouts"
-	"github.com/Cremator/open-ethereum-pool/proxy"
-	"github.com/Cremator/open-ethereum-pool/storage"
+	"./api"
+	"./payouts"
+	"./proxy"
+	"./storage"
 )
 
 var cfg proxy.Config
