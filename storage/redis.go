@@ -11,7 +11,7 @@ import (
 
 	"gopkg.in/redis.v3"
 
-	"github.com/Cremator/open-ethereum-pool/util"
+	"../util"
 )
 
 type Config struct {
