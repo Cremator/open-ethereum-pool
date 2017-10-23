@@ -9,7 +9,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/Cremator/open-ethereum-pool/util"
+	"../util"
 )
 
 const (
