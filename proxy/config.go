@@ -1,10 +1,10 @@
 package proxy
 
 import (
-	"github.com/Cremator/open-ethereum-pool/api"
-	"github.com/Cremator/open-ethereum-pool/payouts"
-	"github.com/Cremator/open-ethereum-pool/policy"
-	"github.com/Cremator/open-ethereum-pool/storage"
+	"../api"
+	"../payouts"
+	"../policy"
+	"../storage"
 )
 
 type Config struct {
