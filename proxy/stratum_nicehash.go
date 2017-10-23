@@ -9,7 +9,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Cremator/open-ethereum-pool/util"
+	"../util"
 	"math/rand"
 	"strings"
 )
