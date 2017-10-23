@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Cremator/open-ethereum-pool/rpc"
-	"github.com/Cremator/open-ethereum-pool/util"
+	"../rpc"
+	"../util"
 )
 
 // Allow only lowercase hexadecimal with 0x prefix
